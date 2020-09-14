@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./Styles/UpSection.css" />
+    <link rel="stylesheet" href="./Styles/SearchBar.css" />
+    <link rel="stylesheet" href="./Styles/Tasks.css" />
+    <link rel="stylesheet" href="./Styles/ConfirmBox.css" />
+    <link rel="stylesheet" href="./Styles/Search-Box-result.css" />
+    <link rel="stylesheet" href="./Styles/Footer.css" />
+    <link rel="stylesheet" href="./Styles/ErrorBox.css" />
+    <link rel="stylesheet" href="./Styles/EditBoxConfirm.css" />
+    <script src="./Scripts/AddTask.js"></script>
+    <script src="./Scripts//DeleteTask.js"></script>
+    <script src="./Scripts/ShowConfirmBox.js"></script>
+    <script src="./Scripts/Search.js"></script>
+    <script src="./Scripts/InlineEdit.js"></script>
+    <script src="./Scripts/DoneTask.js"></script>
+    <script src="./Scripts/EmptyDoneTasks.js"></script>
+  </head>
+  <body onload="showItems()">
+    <script src="https://use.fontawesome.com/8f452549e1.js"></script>
+    <section id="UpSection">
+      <div class="UpSection__inputs">
+        <div class="UpSection__task">
+          <label class="UpSection__label">Task</label>
+          <input
+            placeholder="Task"
+            class="UpSection__input"
+            id="UpSection__taskID"
+          />
+        </div>
+        <div class="UpSection__Assignee">
+          <label class="UpSection__label">Assignee</label>
+          <input
+            placeholder="Assignee"
+            class="UpSection__input"
+            id="UpSection__taskAssignID"
+          />
+        </div>
+      </div>
+      <div class="UpSection--Add">
+        <button
+          class="UpSection--Add--Button"
+          onclick="Add(document.getElementById('UpSection__taskID').value,document.getElementById('UpSection__taskAssignID').value,document)"
+        >
+          Add
+        </button>
+        <div class="UpSection__BottomLine"></div>
+      </div>
+    </section>
+    <section id="SearchBar">
+      <div class="SearchBar__container">
+        <i
+          class="fa fa-search SearchBar__SearchIcon"
+          aria-hidden="true"
+          onclick="serach(document.getElementById('Search').value)"
+        ></i>
+        <input placeholder="Search" class="SearchBar--input" id="Search" />
+        <i
+          class="fa fa-times SearchBar--X-Icon fa-2x"
+          aria-hidden="true"
+          onclick="emptySearchField()"
+        ></i>
+      </div>
+    </section>
+    <section id="Tasks"></section>
+
+    <section id="Confirm-Box">
+      <div class="Confirm-Box__question">
+        Are you sure you want to delete this task ?
+      </div>
+      <div class="Confirm-Box__Buttons">
+        <button class="Confirm-Box__Buttons--CANCLE" onclick="closeForm()">
+          CANCLE
+        </button>
+        <button class="Confirm-Box__Buttons--Delete" onclick="confirm_delete()">
+          Delete
+        </button>
+      </div>
+    </section>
+
+    <section id="Search-Box">
+      <div class="Search-Box__result">
+        <p id="Search-Box__statment"></p>
+      </div>
+      <button class="Search-Box--close" onclick="closeSearchBox()">
+        Close
+      </button>
+    </section>
+    <section id="Error-Box">
+      <div class="Error-Box__icon">
+        <i
+          class="fa fa-exclamation-triangle error-icon fa-3x"
+          aria-hidden="true"
+        ></i>
+      </div>
+      <div>All Fields are required , please enter them all</div>
+      <button class="Error-Box__button--ok" onclick="closeErrorBox()">
+        Ok
+      </button>
+    </section>
+
+    <section id="Edit-Box-Success">
+      <span class="Edit-Box-Success__ICON">
+        <i class="fa fa-check edit__icon__style fa-4x" aria-hidden="true"></i>
+      </span>
+      <span class="Edit-Box-Success__par">
+        Your Chnages are submitted Successfully !!
+      </span>
+      <div>
+        <button onclick="closeEditMsg()" class="Edit-Box-Success--button">
+          Ok
+        </button>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer__header">
+        <h1 class="footer__header__h1">Done Tasks</h1>
+        <i
+          class="fa fa-trash fa-2x trash-icon footer__trash"
+          aria-hidden="true"
+          onclick="emptyDoneTasks()"
+        ></i>
+      </div>
+      <section id="footer__doneTasks"></section>
+    </footer>
+  </body>
+</html>

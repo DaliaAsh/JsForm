@@ -1,0 +1,38 @@
+#SearchBar {
+  width: 60%;
+  height: 3em;
+  background-color: #bbbbbb;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SearchBar__container {
+  background-color: white;
+  width: 95%;
+  height: 2em;
+  margin: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.SearchBar__SearchIcon {
+  flex-grow: 1;
+  margin-left: 1.5em;
+  color: #555555;
+}
+.SearchBar--input {
+  flex-grow: 5;
+  border: none;
+}
+.SearchBar--X-Icon {
+  margin-right: 4%;
+}
+.SearchBar--X-Icon:hover {
+  cursor: pointer;
+  color: red;
+}
+.SearchBar--input:focus {
+  outline: none;
+}

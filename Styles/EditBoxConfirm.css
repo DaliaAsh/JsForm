@@ -1,0 +1,37 @@
+#Edit-Box-Success {
+  width: 25em;
+  height: 8em;
+  box-shadow: #eeeeee 1em 1em 1em 1em;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em;
+  position: fixed;
+  top: 20em;
+  background-color: white;
+  display: none;
+}
+.edit__icon__style {
+  color: royalblue;
+}
+.Edit-Box-Success__par {
+  font-weight: bold;
+  font-size: larger;
+  margin-left: 1em;
+  font-family: Calibri;
+}
+.Edit-Box-Success--button {
+  margin-left: 10em;
+  width: 8em;
+  height: 2em;
+  background-color: white;
+  outline: none;
+  border: 0.05em black solid;
+  color: black;
+  font-size: large;
+}
+.Edit-Box-Success--button:hover {
+  background-color: royalblue;
+  cursor: pointer;
+  border: none;
+  color: white;
+}

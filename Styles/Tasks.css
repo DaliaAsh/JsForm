@@ -1,0 +1,83 @@
+#Tasks {
+  width: 60%;
+  height: 40em;
+  margin-top: 2em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 5em;
+}
+.Tasks__task {
+  display: flex;
+  flex-direction: column;
+  height: 12em;
+  justify-content: center;
+  align-items: center;
+  border: 0.1em solid black;
+  margin-bottom: 2em;
+}
+.Tasks__delete {
+  width: 80%;
+  height: 50%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.Tasks__assign {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.Tasks__TaskSize {
+  outline: none;
+  font-size: large;
+}
+
+.Tasks__Edit {
+  align-self: flex-start;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+.edit-icon:hover {
+  color: salmon;
+}
+.edit-icon {
+  color: royalblue;
+}
+.trash-icon {
+  color: black;
+}
+.tick-icon {
+  color: black;
+}
+
+.trash-icon:hover {
+  color: red;
+  cursor: pointer;
+}
+.tick-icon:hover {
+  color: green;
+  cursor: pointer;
+}
+#Tasks::-webkit-scrollbar {
+  width: 1em;
+}
+
+#Tasks::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+#Tasks::-webkit-scrollbar-thumb {
+  background: #555555;
+  border-radius: 2em;
+}
+
+#Tasks::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+.Tasks__submitEdit {
+  font-weight: bold;
+  color: royalblue;
+}

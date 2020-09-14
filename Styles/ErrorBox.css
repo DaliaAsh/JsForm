@@ -1,0 +1,28 @@
+#Error-Box {
+  width: 15em;
+  height: 8em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #555555;
+  background-color: white;
+  display: none;
+  padding: 2em;
+}
+.error-icon {
+  color: red;
+}
+.Error-Box__icon {
+  margin-bottom: 1em;
+}
+.Error-Box__button--ok {
+  margin-top: 1em;
+  margin-left: 6em;
+  width: 5em;
+  height: 2em;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.Error-Box__button--ok:hover {
+  cursor: pointer;
+}

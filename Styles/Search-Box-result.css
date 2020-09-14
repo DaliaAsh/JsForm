@@ -1,0 +1,38 @@
+#Search-Box {
+  width: 30%;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.1em 0.2em 0.3em 0.1em #777777;
+  display: none;
+  z-index: 1;
+  opacity: 1;
+  background-color: white;
+}
+.Search-Box__result {
+  font-family: Calibri;
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: -5%;
+}
+.Search-Box--close {
+  margin-left: 40%;
+  padding: 0.5em 1.5em;
+  color: white;
+  background-color: royalblue;
+  border: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.3em;
+}
+.Search-Box--close:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: silver;
+}
+#Search-Box__statment {
+  padding: 2em;
+  font-family: serif;
+}
