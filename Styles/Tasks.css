@@ -3,16 +3,17 @@
   height: 40em;
   margin-top: 2em;
   overflow-x: hidden;
-  overflow-y: scroll;
-  margin-bottom: 5em;
+  overflow-y: auto;
+  margin-bottom: 2em;
 }
 .Tasks__task {
   display: flex;
   flex-direction: column;
-  height: 12em;
+  height: 6em;
   justify-content: center;
   align-items: center;
-  border: 0.1em solid black;
+  border: 0.05em solid black;
+  padding-bottom: 0.9em;
   margin-bottom: 2em;
 }
 .Tasks__delete {
@@ -32,6 +33,7 @@
 .Tasks__TaskSize {
   outline: none;
   font-size: large;
+  border: none;
 }
 
 .Tasks__Edit {

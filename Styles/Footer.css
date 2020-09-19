@@ -1,9 +1,10 @@
 #footer {
   width: 60%;
-  height: 25em;
+  height: 20em;
   display: flex;
   flex-direction: column;
-  border: 0.1em solid black;
+  border: 0.05em solid black;
+  margin-bottom: 2em;
 }
 .footer__header {
   display: flex;
@@ -15,15 +16,16 @@
   width: 80%;
   height: 80%;
   margin-bottom: 5%;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   display: flex;
   flex-direction: row;
 }
 .footer__task--done {
+  height: 2.5em;
   box-shadow: 0.1em 0.2em 0.3em 0.2em #555555;
   align-self: center;
-  padding: 2em;
+  padding: 4em;
   margin-right: 0.9em;
   border-left: 0.05em solid #555555;
 }

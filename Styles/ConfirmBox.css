@@ -1,6 +1,4 @@
 #Confirm-Box {
-  width: 20em;
-  height: 8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,47 +8,45 @@
   z-index: 1;
   opacity: 1;
   background-color: white;
+  border-radius: 0.4em;
+  padding: 1em 1em;
 }
-.Confirm-Box__question,
-.Confirm-Box__Delete,
-.Confirm-Box__CANCLE {
+.Confirm-Box__question {
   font-family: Calibri;
 }
 .Confirm-Box__question {
-  width: 90%;
-  height: 40%;
-  margin-left: 10%;
-  margin-top: 5%;
   font-size: 1.2em;
+  margin-bottom: 1.5em;
 }
 .Confirm-Box__Buttons {
-  width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
-.Confirm-Box__Buttons--CANCLE {
-  border-radius: 0.2em;
-  width: 30%;
-  height: 100%;
-  background-color: white;
-  color: black;
-  border: none;
-  font-size: large;
-  padding: 0.5em;
+.Confirm-Box__Buttons--cancleButton,
+.Confirm-Box__Buttons--deleteButton {
+  padding: 1em 1.2em;
+  border-radius: 0.4em;
   outline: none;
-}
-.Confirm-Box__Buttons--Delete {
-  border-radius: 0.2em;
-  width: 30%;
-  height: 100%;
-  background-color: royalblue;
-  color: white;
   border: none;
-  font-size: large;
-  padding: 0.5em;
+  box-sizing: border-box;
+  width: 7em;
 }
-.Confirm-Box__Buttons--Delete:hover {
-  cursor: pointer;
-  color: royalblue;
+.Confirm-Box__Buttons--deleteButton {
+  background-color: #4f8aff;
+  color: white;
+}
+.Confirm-Box__Buttons--cancleButton {
+  margin-right: 1em;
+}
+.Confirm-Box__Buttons--deleteButton:hover {
   background-color: white;
+  color: #4f8aff;
+  border: 0.05em black solid;
+  cursor: pointer;
+}
+.Confirm-Box__Buttons--cancleButton:hover {
+  background-color: white;
+  color: #4f8aff;
+  border: 0.05em black solid;
+  cursor: pointer;
 }

@@ -6,3 +6,7 @@ function deleteTask(task_name) {
   localStorage.setItem("Tasks_Arr", arr);
   showItems();
 }
+let delteButton = document.getElementById("Button--Delete");
+delteButton.addEventListener("click", function (event) {
+  confirm_delete();
+});
