@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./Styles/Search-Box-result.css" />
     <link rel="stylesheet" href="./Styles/Footer.css" />
     <link rel="stylesheet" href="./Styles/EditBoxConfirm.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Styles/ErrorBox.css" />
   </head>
   <body onload="showItems()">
-    <form class="Form__Section">
+    <form class="Form__Section" onsubmit="return false">
       <section id="UpSection">
         <div class="UpSection__labels">
           <label class="UpSection__TaskLabel">Task</label>
@@ -40,6 +40,7 @@
         </div>
       </section>
       <div class="UpSection__Line"></div>
+      <div class="Error__line" id="Error__BOX"></div>
       <section id="SearchBar">
         <div class="SearchBar__container">
           <i
@@ -117,5 +118,6 @@
     <script src="./Scripts/EmptyDoneTasks.js"></script>
     <script src="./Scripts/FilterSearch.js"></script>
     <script src="https://use.fontawesome.com/8f452549e1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>

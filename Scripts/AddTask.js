@@ -2,6 +2,7 @@ function appendItem() {
   let task_name = document.getElementById("task").value;
   let task_Assignee = document.getElementById("assignee").value;
   if (task_name.length !== 0 && task_Assignee.length !== 0) {
+    $("#Error__BOX").text("");
     let str = localStorage.getItem("Tasks_Arr");
     if (str !== null && str.length !== 0) {
       let arr = str.split(",");
@@ -17,6 +18,8 @@ function appendItem() {
       localStorage.setItem("Tasks_Arr", initial);
       showItems();
     }
+  } else {
+    $("#Error__BOX").text("*Please Enter all fields");
   }
 }
 function showItems() {
@@ -69,3 +72,6 @@ function showItems() {
   }
   showDoneTasks();
 }
+$(document).raedy(function () {
+  $("#Error__BOX").text("");
+});
