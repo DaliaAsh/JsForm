@@ -20,12 +20,12 @@
 .SearchBar__SearchIcon {
   flex-grow: 1;
   margin-left: 1.5em;
-  color: black;
+  columns: #555555;
 }
 .SearchBar--input {
   flex-grow: 5;
   border: none;
-  margin-left: -4em;
+  margin-left: -3em;
 }
 .SearchBar--X-Icon {
   margin-right: 4%;
@@ -36,7 +36,4 @@
 }
 .SearchBar--input:focus {
   outline: none;
-}
-#X-Icon {
- 
 }
