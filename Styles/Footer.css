@@ -1,5 +1,5 @@
 #footer {
-  width: 60%;
+  width: 30em;
   height: 20em;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   flex-direction: row;
 }
 .footer__task--done {
-  height: 2.5em;
+  height: 2.3em;
   box-shadow: 0.1em 0.2em 0.3em 0.2em #555555;
   align-self: center;
   padding: 4em;
@@ -42,7 +42,7 @@
   margin-left: 40%;
 }
 .footer__trash {
-  margin-left: 20%;
+  margin-left: 10%;
   color: black;
 }
 .footer__trash:hover {

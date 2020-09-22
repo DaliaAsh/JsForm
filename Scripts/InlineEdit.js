@@ -6,17 +6,7 @@ function editInline(id) {
   arr[next_id] = document.getElementById("assignSpan" + id).value;
   let newStr = arr.toString();
   localStorage.setItem("Tasks_Arr", newStr);
-  showSuccessEdit();
 }
-
-function showSuccessEdit() {
-  document.getElementById("Edit-Box-Success").style.display = "inline";
-  document.getElementById("Tasks").style.opacity = "0.3";
-  document.getElementById("SearchBar").style.opacity = "0.3";
-  document.getElementById("UpSection").style.opacity = "0.3";
-  document.getElementById("footer").style.opacity = "0.3";
-}
-
 function closeEditMsg() {
   document.getElementById("Edit-Box-Success").style.display = "none";
   document.getElementById("Tasks").style.opacity = "1";

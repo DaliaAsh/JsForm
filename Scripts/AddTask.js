@@ -34,7 +34,7 @@ function showItems() {
       str +=
         " <input class='Tasks__TaskSize' id='input" +
         i +
-        "' onchange='editInline(`" +
+        "' oninput='editInline(`" +
         i +
         "`)'" +
         " value = '" +
@@ -49,7 +49,7 @@ function showItems() {
       str +=
         "</div><div class='Tasks__assign'><input class='Tasks__TaskSize' id='assignSpan" +
         i +
-        "' onchange='editInline(`" +
+        "' oninput='editInline(`" +
         i +
         "`)'" +
         " value = '" +
