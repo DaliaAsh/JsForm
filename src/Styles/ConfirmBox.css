@@ -1,4 +1,4 @@
-#Confirm-Box {
+#confirm-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,19 +11,19 @@
   border-radius: 0.4em;
   padding: 1em 1em;
 }
-.Confirm-Box__question {
+.confirm-box__question {
   font-family: Calibri;
 }
-.Confirm-Box__question {
+.confirm-box__question {
   font-size: 1.2em;
   margin-bottom: 1.5em;
 }
-.Confirm-Box__Buttons {
+.confirm-box__Buttons {
   display: flex;
   justify-content: flex-end;
 }
-.Confirm-Box__Buttons--cancleButton,
-.Confirm-Box__Buttons--deleteButton {
+.confirm-box__Buttons--cancleButton,
+.confirm-box__Buttons--deleteButton {
   padding: 1em 1.2em;
   border-radius: 0.4em;
   outline: none;
@@ -31,20 +31,20 @@
   box-sizing: border-box;
   width: 7em;
 }
-.Confirm-Box__Buttons--deleteButton {
+.confirm-box__Buttons--deleteButton {
   background-color: #4f8aff;
   color: white;
 }
-.Confirm-Box__Buttons--cancleButton {
+.confirm-box__Buttons--cancleButton {
   margin-right: 1em;
 }
-.Confirm-Box__Buttons--deleteButton:hover {
+.confirm-box__Buttons--deleteButton:hover {
   background-color: white;
   color: #4f8aff;
   border: 0.05em black solid;
   cursor: pointer;
 }
-.Confirm-Box__Buttons--cancleButton:hover {
+.confirm-box__Buttons--cancleButton:hover {
   background-color: white;
   color: #4f8aff;
   border: 0.05em black solid;

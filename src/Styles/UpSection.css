@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.Form__Section {
+.form-section {
   width: 60em;
   height: 100%;
   display: flex;
@@ -17,42 +17,42 @@ body {
   align-items: center;
   justify-content: center;
 }
-#UpSection {
+#up-section {
   display: flex;
   flex-direction: row;
   width: 70%;
   height: 5em;
 }
-.UpSection__labels {
+.up-section__labels {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
   align-content: center;
 }
-.UpSection__TaskLabel {
+.up-section__task-label {
   text-align: right;
   margin-bottom: 0.9em;
 }
-.UpSection__TaskAssignee {
+.up-section__task-assignee {
   text-align: right;
 }
-.UpSection__TaskInputs {
+.up-section__task-inputs {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin-top: 1.2em;
   margin-left: 2em;
 }
-.UpSection__TaskInputs--taskInput,
-.UpSection__TaskInputs--assigneeInput {
+.up-section__task-inputs--task-input,
+.up-section__task-inputs--assignee-input {
   padding: 0.5em;
   border: 0.05em solid black;
   border-radius: 0.3em;
 }
-.UpSection__TaskInputs--taskInput {
+.up-section__task-inputs--task-input {
   margin-bottom: 0.9em;
 }
-.UpSection__Button {
+.up-section__Button {
   align-self: flex-end;
   margin-left: 1em;
   margin-bottom: -2.2em;
@@ -60,20 +60,28 @@ body {
   height: 2em;
   padding: 1.5em;
 }
-.UpSection__Button--addButton {
+.up-section__Button--add-button {
   width: 100%;
   height: 100%;
   border-radius: 0.3em;
   border: 0.05em solid black;
 }
-.UpSection__Line {
+.up-section__Line {
   width: 60%;
   border-bottom: 0.1em black solid;
   margin-top: 2em;
 }
-.UpSection__Button--addButton:hover {
+.up-section__Button--add-button:hover {
   cursor: pointer;
   color: #555555;
   font-weight: bold;
   background-color: white;
+}
+.list {
+  width: 60em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

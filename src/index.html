@@ -5,73 +5,78 @@
     <link rel="stylesheet" href="./Styles/SearchBar.css" />
     <link rel="stylesheet" href="./Styles/Tasks.css" />
     <link rel="stylesheet" href="./Styles/ConfirmBox.css" />
-    <link rel="stylesheet" href="./Styles/Search-Box-result.css" />
     <link rel="stylesheet" href="./Styles/Footer.css" />
     <link rel="stylesheet" href="./Styles/ErrorBox.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body onload="showItems()">
-    <form class="Form__Section" onsubmit="return false">
-      <section id="UpSection">
-        <div class="UpSection__labels">
-          <label class="UpSection__TaskLabel">Task</label>
-          <label class="UpSection__TaskAssignee">Assignee</label>
+    <form class="form-section" onsubmit="preventDefault(event)" id="form">
+      <section id="up-section">
+        <div class="up-section__labels">
+          <label class="up-section__task-label">Task</label>
+          <label class="up-section__task-assignee">Assignee</label>
         </div>
-        <div class="UpSection__TaskInputs">
+        <div class="up-section__task-inputs">
           <input
-            class="UpSection__TaskInputs--taskInput"
+            class="up-section__task-inputs--task-input"
             placeholder="Task"
             id="task"
             autofocus="true"
           />
           <input
-            class="UpSection__TaskInputs--assigneeInput"
+            class="up-section__task-inputs--assignee-input"
             placeholder="Assignee"
             id="assignee"
           />
         </div>
-        <div class="UpSection__Button">
+        <div class="up-section__Button">
           <button
-            class="UpSection__Button--addButton"
-            id="UpSection__Button__addButton"
+            class="up-section__Button--add-button"
+            id="up-section__Button__add-button"
             onclick="appendItem()"
           >
             Add
           </button>
         </div>
       </section>
-      <div class="UpSection__Line"></div>
-      <div class="Error__line" id="Error__BOX"></div>
-      <section id="SearchBar">
-        <div class="SearchBar__container">
+      <div class="up-section__Line"></div>
+      <div class="error__line" id="error__BOX"></div>
+    </form>
+    <div class="list">
+      <section id="search-bar">
+        <div class="search-bar__container">
           <i
-            class="fa fa-search SearchBar__SearchIcon fa-x"
+            class="fa fa-search search-bar__SearchIcon fa-x"
             aria-hidden="true"
-            onclick="serach(document.getElementById('Search').value)"
           ></i>
-          <input placeholder="Search" class="SearchBar--input" id="Search" />
+          <input
+            placeholder="Search"
+            class="search-bar--input"
+            id="search"
+            oninput="filterSearch()"
+          />
           <i
-            class="fa fa-times SearchBar--X-Icon fa-2x"
+            class="fa fa-times search-bar--X-Icon fa-2x"
             aria-hidden="true"
             id="X-Icon"
           ></i>
         </div>
       </section>
-      <section id="Tasks"></section>
+      <section id="tasks"></section>
 
-      <section id="Confirm-Box">
-        <div class="Confirm-Box__question">
+      <section id="confirm-box">
+        <div class="confirm-box__question">
           Are you sure you Delete This Task
         </div>
-        <div class="Confirm-Box__Buttons">
+        <div class="confirm-box__Buttons">
           <button
-            class="Confirm-Box__Buttons--cancleButton"
+            class="confirm-box__Buttons--cancleButton"
             id="Button--Cancle"
           >
             CANCLE
           </button>
           <button
-            class="Confirm-Box__Buttons--deleteButton"
+            class="confirm-box__Buttons--deleteButton"
             id="Button--Delete"
           >
             Delete
@@ -79,15 +84,9 @@
         </div>
       </section>
 
-      <section id="Search-Box">
-        <div class="Search-Box__result">
-          <div id="Search-Box__statment"></div>
-        </div>
-      </section>
-
       <footer id="footer">
         <div class="footer__header">
-          <h1 class="footer__header__h1">Done Tasks</h1>
+          <h1 class="footer__header__h1">Done tasks</h1>
           <i
             class="fa fa-trash fa-2x trash-icon footer__trash"
             aria-hidden="true"
@@ -96,11 +95,10 @@
         </div>
         <section id="footer__doneTasks"></section>
       </footer>
-    </form>
+    </div>
     <script src="./Scripts/AddTask.js"></script>
     <script src="./Scripts//DeleteTask.js"></script>
     <script src="./Scripts/ShowConfirmBox.js"></script>
-    <script src="./Scripts/Search.js"></script>
     <script src="./Scripts/InlineEdit.js"></script>
     <script src="./Scripts/DoneTask.js"></script>
     <script src="./Scripts/EmptyDoneTasks.js"></script>

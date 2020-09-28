@@ -1,4 +1,4 @@
-#Tasks {
+#tasks {
   width: 60%;
   height: 40em;
   margin-top: 2em;
@@ -6,7 +6,7 @@
   overflow-y: auto;
   margin-bottom: 2em;
 }
-.Tasks__task {
+.tasks__task {
   display: flex;
   flex-direction: column;
   height: 6em;
@@ -16,7 +16,7 @@
   padding-bottom: 0.9em;
   margin-bottom: 2em;
 }
-.Tasks__delete {
+.tasks__delete {
   width: 80%;
   height: 50%;
   margin-top: 1em;
@@ -24,19 +24,19 @@
   display: flex;
   justify-content: space-between;
 }
-.Tasks__assign {
+.tasks__assign {
   width: 80%;
   height: 50%;
   display: flex;
   justify-content: space-between;
 }
-.Tasks__TaskSize {
+.tasks__TaskSize {
   outline: none;
   font-size: large;
   border: none;
 }
 
-.Tasks__Edit {
+.task__Edit {
   align-self: flex-start;
   margin-left: 2em;
   margin-top: 2em;
@@ -62,24 +62,24 @@
   color: green;
   cursor: pointer;
 }
-#Tasks::-webkit-scrollbar {
+#tasks::-webkit-scrollbar {
   width: 1em;
 }
 
-#Tasks::-webkit-scrollbar-track {
+#tasks::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
-#Tasks::-webkit-scrollbar-thumb {
+#tasks::-webkit-scrollbar-thumb {
   background: #555555;
   border-radius: 2em;
 }
 
-#Tasks::-webkit-scrollbar-thumb:hover {
+#tasks::-webkit-scrollbar-thumb:hover {
   background: black;
 }
-.Tasks__submitEdit {
+.task__submitEdit {
   font-weight: bold;
   color: royalblue;
 }

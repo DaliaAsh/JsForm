@@ -1,4 +1,4 @@
-#SearchBar {
+#search-bar {
   width: 60%;
   height: 3em;
   background-color: #bbbbbb;
@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
 }
-.SearchBar__container {
+.search-bar__container {
   background-color: white;
   width: 95%;
   height: 2em;
@@ -17,23 +17,23 @@
   flex-direction: row;
   align-items: center;
 }
-.SearchBar__SearchIcon {
+.search-bar__SearchIcon {
   flex-grow: 1;
   margin-left: 1.5em;
   columns: #555555;
 }
-.SearchBar--input {
+.search-bar--input {
   flex-grow: 5;
   border: none;
   margin-left: -3em;
 }
-.SearchBar--X-Icon {
+.search-bar--X-Icon {
   margin-right: 4%;
 }
-.SearchBar--X-Icon:hover {
+.search-bar--X-Icon:hover {
   cursor: pointer;
   color: red;
 }
-.SearchBar--input:focus {
+.search-bar--input:focus {
   outline: none;
 }
