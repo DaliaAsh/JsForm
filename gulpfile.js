@@ -8,6 +8,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
+const deploy      = require('gulp-gh-pages');
 function copyHTML(){
 
     return src('src/*.html').pipe(gulp.dest('dist')); 
@@ -27,11 +28,14 @@ function cssTask() {
     return src(cssPath)
       .pipe(sourcemaps.init())
       .pipe(concat('style.css'))
-      .pipe(postcss([autoprefixer(), cssnano()])) //not all plugins work with postcss only the ones mentioned in their documentation
+      .pipe(postcss([autoprefixer(), cssnano()])) 
       .pipe(sourcemaps.write('.'))
       .pipe(dest('dist/assets/css'));
   }
-
+  gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+      .pipe(deploy())
+  });
   
 function watchTask() {
     watch([cssPath, jsPath], { interval: 1000 }, parallel(cssTask, jsTask));
