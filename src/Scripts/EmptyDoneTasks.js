@@ -1,4 +1,4 @@
 function emptyDoneTasks() {
-  localStorage.removeItem("doneTasks");
-  showDoneTasks();
+  localStorage.removeItem("Tasks_Done_Arr");
+  showTasks("Tasks_Done_Arr"); 
 }

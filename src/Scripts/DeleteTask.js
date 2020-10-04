@@ -1,14 +1,15 @@
 function deleteTask(id) {
-  let arrStr = JSON.parse(localStorage.getItem("Tasks_Arr"));
-  let keys = Object.keys(arrStr);
-  let length = keys.length;
-  for (let i = 0; i < length; i++) {
-    if (keys[i] == id) {
-      delete arrStr[id];
-    }
+  let tasks = localStorage.getItem("Tasks_Arr"); 
+  if(tasks === null){
+    return ; 
   }
-  localStorage.setItem("Tasks_Arr", JSON.stringify(arrStr));
-  showItems();
+  let tasksArray = JSON.parse(tasks); 
+  let taskIndex = tasksArray.findIndex((task)=>{
+    return task.id.toString() === id ; 
+  });
+  tasksArray.splice(taskIndex,1); 
+  localStorage.setItem("Tasks_Arr", JSON.stringify(tasksArray));
+  showTasks("Tasks_Arr");
 }
 let deleteButton = document.getElementById("Button--Delete");
 deleteButton.addEventListener("click", function (event) {
