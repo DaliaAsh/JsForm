@@ -15,7 +15,7 @@ function appendItem() {
     tasksArr.push(initialTask);
     localStorage.setItem("Tasks_Arr", JSON.stringify(tasksArr));
   } else {
-    let currentTasksArr = JSON.parse(localStorage.getItem("Tasks_Arr"));
+    let currentTasksArr = JSON.parse(currentTasks);
     let newTask = {
       name: taskName,
       assignee: taskAssignee,
